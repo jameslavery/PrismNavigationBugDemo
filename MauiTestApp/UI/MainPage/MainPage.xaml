@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mainPage="using:MauiTestApp.UI.MainPage"
+    x:Class="MauiTestApp.UI.MainPage.MainPage"
+    x:DataType="mainPage:MainPageViewModel">
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        VerticalOptions="StartAndExpand">
+
+        <Button
+            Margin="0,30,0,0"
+            Text="Navigate Animated Modal"
+            Command="{Binding SecondPageAnimatedModalCommand}" />
+
+        <Button
+            Margin="0,30,0,0"
+            Text="Navigate Animated Non Modal"
+            Command="{Binding SecondPageAnimatedNonModalCommand}" />
+
+        <Button
+            Margin="0,30,0,0"
+            Text="Navigate Not Animated Modal"
+            Command="{Binding SecondPageNotAnimatedModalCommand}" />
+
+        <Button
+            Margin="0,30,0,0"
+            Text="Navigate Not Animated Non Modal"
+            Command="{Binding SecondPageNotAnimatedNonModalCommand}" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

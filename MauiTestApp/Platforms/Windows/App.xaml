@@ -1,0 +1,30 @@
+﻿<maui:MauiWinUIApplication
+    x:Class="MauiTestApp.Platforms.Windows.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui">
+
+    <!--
+        The following removes borders from Windows Entry controls.
+        This seems to be the only way to stop the blue underline appearing in an
+        Entry control when it has the focus.
+    -->
+
+    <!--<maui:MauiWinUIApplication.Resources>
+        <x:Boolean
+            x:Key="UseSystemFocusVisuals">
+            False
+        </x:Boolean>
+
+
+        <Thickness
+            x:Key="TextControlBorderThemeThickness">
+            0
+        </Thickness>
+        <Thickness
+            x:Key="TextControlBorderThemeThicknessFocused">
+            0
+        </Thickness>
+    </maui:MauiWinUIApplication.Resources>-->
+
+</maui:MauiWinUIApplication>
